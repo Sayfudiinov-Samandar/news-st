@@ -1,17 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
-
 </head>
+
 <body>
     <header class="site-header">
         <div class="container">
 
+            <div class="header-box">
+                <div class="header-box__logo-box">
+                    <a class="header-box__logo-link" href="./index.html">
+                        <img class="header-box__logo" src="./images/news-site-log.png" width="50" height="50"
+                            alt="Site logo just text N">
+                    </a>
+                    <a class="header-box__logo-link" href="./index.html">
+                        ews
+                    </a>
+                </div>
+
+                <form class=" search-form" role="search">
+                    <div class="canvas-box">
+                        <button class="canvas-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
+                            <p class="text-menu">menu</p>
+                        </button>
+                        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop"
+                            aria-labelledby="offcanvasTopLabel">
+                            <div class="offcanvas-header bg-warning">
+                                <p class="convast-title">
+                                    Choose a category
+                                </p>
+                            </div>
+
+                            <div class="offcanvas-body bg-warning ">
+
+                                <div class="canvas-body-box">
+                                    <select class="form-select">
+                                        <option value="">All</option>
+                                        <option value="popularity">Popular</option>
+                                        <option value="relevancy">Relevancy</option>
+                                    </select>
+                                </div>
+
+                                <div>
+                                    <nav class="caegory-box">
+                                        <ul class="category-list">
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="sport">
+                                                    Sport
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="fashion">
+                                                    Fashion
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="car">
+                                                    Cars
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="formula1">
+                                                    Formula 1
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="technologies">
+                                                    Technologies
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="business">
+                                                    Business
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="bitcoin">
+                                                    Bictoin
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="ukraine">
+                                                    Ukraine
+                                                </button>
+                                            </li>
+                                            <li class="category-list__item">
+                                                <button class="categorry-list__btn" value="neweconomy">
+                                                    New economy
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input class="input-search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="form-btn" type="submit">Search</button>
+                </form>
+            </div>
         </div>
     </header>
 
@@ -19,6 +115,63 @@
         <section class="hero">
             <div class="container">
 
+                <div class="hero-box">
+                    <div class="hero-box__top">
+                        <h1 class="site-title">
+                            news
+                        </h1>
+                        <div class="hero-info-box">
+                            <p class="hero-info-title">
+                                Bictoin
+                            </p>
+                            <p class="hero-info-text">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque ullam ad et similique
+                                inventore quaerat, perspiciatis ab labore,
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="result-box">
+                       
+                    </ul>
+
+                    <ul class="pagination-list">
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number">
+                                <<
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number"  data-page="1">
+                                1
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number"  data-page="2">
+                                2
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number"  data-page="3">
+                                3 
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number"  data-page="4">
+                                4
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number"  data-page="5">
+                                5
+                            </p>
+                        </li>
+                        <li class="pagination-list__item">
+                            <p class="pagination-list__number" data-page=">">
+                                >>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -28,5 +181,52 @@
 
         </div>
     </footer>
+    <template class="template">
+        <li class="list-item">
+            <img class="news-img" src="/images/fon-code.jpg" width="400" height="180">
+            <div class="item-text-box">
+                <a class="link-to-site" href="">
+                    <p class="item-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                    <p class="sourse-name ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id
+                        architecto asperiores maxime vel quasi </p>
+                </a>
+                <button type="button " class="btn-summury" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    More info
+                </button>
+            </div>
+        </li>
+    </template>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque eius, ullam corporis
+                    suscipit sint facilis laboriosam ipsa voluptate aspernatur veniam quos nobis quisquam sunt debitis
+                    deserunt voluptas neque a incidunt? Distinctio, consequuntur laboriosam repellendus deleniti
+                    corrupti suscipit perferendis illum sequi voluptas facilis id eaque quisquam laudantium quasi.
+                    Veniam repellendus ipsam rerum, autem enim, doloremque, fugit repudiandae aut quis laudantium
+                    incidunt nemo nostrum dolorem illum! In, architecto? Ipsam illum nihil, reiciendis odit ex optio
+                    nam, fugiat iste, at placeat voluptates. Odio consequatur explicabo, adipisci nobis tempore
+                    similique earum. Non, blanditiis aliquid magnam ipsum minus a eius quae libero at deserunt.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-warning">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
+</html>
+
 </html>

@@ -1,0 +1,70 @@
+.hero-box__top{
+    position: relative;
+}
+
+
+.site-title{
+    display: inline;
+    position: relative;
+    margin: 0;
+    left: calc(50% + -800px);
+    top: -100px;
+    text-align: center;
+    font-family: "Assistant";
+    font-size: 400px;
+    line-height: 600px;
+    color: #000;
+}
+.hero-info-box{
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    width: 100%;
+    max-width: 300px;
+}
+.hero-info-title{
+    font-family: "Assistant";
+    font-size: 30px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+.hero-info-text{
+    font-family: "Assistant";
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.result-box{
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: -60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 105px;
+    padding: 0;
+}
+
+.pagination-list{
+    position: relative;
+    margin-left: auto;
+    margin-right: 100px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    &::before{
+        
+    }
+}
+.pagination-list__number{
+    cursor: pointer;
+    font-family: "Assistant";
+    font-size: 20px;
+    line-height: 30px;
+}

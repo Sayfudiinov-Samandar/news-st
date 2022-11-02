@@ -1,0 +1,45 @@
+
+.list-item{
+    border-radius: 2px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+}
+
+.news-img{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+
+}
+
+.list-item:nth-child(even){
+    background-color: #000;
+}
+
+.list-item:nth-child(even) * p,a{
+    color: #fff;
+}   
+.list-item * p, a{
+    color: #000;
+}
+.link-to-site{
+    color: #000;
+    text-decoration: none;
+}
+.item-title{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+.item-text-box{
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.btn-summury{
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #e60e0e;
+    border: none;
+}

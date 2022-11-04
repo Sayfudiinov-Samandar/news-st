@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>News</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -23,9 +23,10 @@
                     <a class="header-box__logo-link" href="./index.html">
                         ews
                     </a>
-                </div>
 
-                <form class=" search-form" role="search">
+
+                </div>
+                <div class="d-flex align-items-center">
                     <div class="canvas-box">
                         <button class="canvas-btn" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
@@ -38,9 +39,9 @@
                                     Choose a category
                                 </p>
                             </div>
-
+    
                             <div class="offcanvas-body bg-warning ">
-
+    
                                 <div class="canvas-body-box">
                                     <select class="form-select">
                                         <option value="">All</option>
@@ -48,7 +49,7 @@
                                         <option value="relevancy">Relevancy</option>
                                     </select>
                                 </div>
-
+    
                                 <div>
                                     <nav class="caegory-box">
                                         <ul class="category-list">
@@ -103,10 +104,12 @@
                             </div>
                         </div>
                     </div>
-
-                    <input class="input-search" type="search" placeholder="Search" aria-label="Search">
-                    <button class="form-btn" type="submit">Search</button>
-                </form>
+                    <form class="search-form" role="search">
+                        
+                        <input class="input-search" type="search" placeholder="Search" aria-label="Search">
+                        <button class="form-btn" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
         </div>
     </header>
@@ -136,12 +139,12 @@
 
                     <ul class="pagination-list">
                         <li class="pagination-list__item">
-                            <p class="pagination-list__number">
+                            <p class="pagination-list-mark">
                                 <<
                             </p>
                         </li>
                         <li class="pagination-list__item">
-                            <p class="pagination-list__number"  data-page="1">
+                            <p class="pagination-list__number "  data-page="1">
                                 1
                             </p>
                         </li>
@@ -166,7 +169,7 @@
                             </p>
                         </li>
                         <li class="pagination-list__item">
-                            <p class="pagination-list__number" data-page=">">
+                            <p class="pagination-list-mark" data-page=">">
                                 >>
                             </p>
                         </li>
@@ -176,23 +179,64 @@
         </section>
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer bg-dark">
         <div class="container">
+            <div class="footer-box">
+                <div class="footer-box__left">
 
+               <span class="footer-box__logo-box">
+                <a class="footer-logo-link" href="./index.html">
+                    <img class="footer-logo" src="./images/news-site-log.png" width="40" height="40" alt="Site footer logo">
+                </a>
+               </span>
+
+                    <a class="footer-box__tel" href="tel: +998993041442">
+                        +998993041442
+                    </a>
+                </div>
+
+                <div class="footer-box__right">
+                    <ul class="footer-box__list">
+                        <li class="footer-box__list-item">
+                            <a class="footer-box__media-link" target="blank" href="https://www.instagram.com/sayfutdiinov/">
+                                <img class="footer-box__media" src="./images/instagram.png" width="20" height="20" alt="Instagram link">
+                            </a>
+                        </li>
+                        <li class="footer-box__list-item">
+                            <a class="footer-box__media-link" target="blank" href="https://t.me/sayfutdiinov">
+                                <img class="footer-box__media" src="./images/telegram.png" width="20" height="20" alt="Instagram link">
+                            </a>
+                        </li>
+                        <li class="footer-box__list-item">
+                            <a class="footer-box__media-link" target="blank" href="https://www.linkedin.com/in/samandar-sayfutdinov-ba8304234/">
+                                <img class="footer-box__media" src="./images/linkedin-logo.png" width="20" height="20" alt="Instagram link">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
+    
+
+
+
     <template class="template">
         <li class="list-item">
-            <img class="news-img" src="/images/fon-code.jpg" width="400" height="180">
+            <img class="news-img" src="/images/fon-code.jpg" width="400" height="250">
             <div class="item-text-box">
-                <a class="link-to-site" href="">
-                    <p class="item-title">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-                    <p class="sourse-name ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis id
-                        architecto asperiores maxime vel quasi </p>
-                </a>
-                <button type="button " class="btn-summury" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    More info
-                </button>
+                <div class="link-to-site">
+                    <p class="item-title"></p>
+                    <p class="sourse-name "> </p>
+                </div>
+                <div class="btn-time-box">
+                    <button type="button " class="btn-summury btn-info" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Content
+                    </button>
+                    <p class="news-time">
+
+                    </p>
+                </div>
             </div>
         </li>
     </template>
@@ -203,21 +247,30 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque eius, ullam corporis
-                    suscipit sint facilis laboriosam ipsa voluptate aspernatur veniam quos nobis quisquam sunt debitis
-                    deserunt voluptas neque a incidunt? Distinctio, consequuntur laboriosam repellendus deleniti
-                    corrupti suscipit perferendis illum sequi voluptas facilis id eaque quisquam laudantium quasi.
-                    Veniam repellendus ipsam rerum, autem enim, doloremque, fugit repudiandae aut quis laudantium
-                    incidunt nemo nostrum dolorem illum! In, architecto? Ipsam illum nihil, reiciendis odit ex optio
-                    nam, fugiat iste, at placeat voluptates. Odio consequatur explicabo, adipisci nobis tempore
-                    similique earum. Non, blanditiis aliquid magnam ipsum minus a eius quae libero at deserunt.
+
+                    <p class="modal-content-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio itaque eius, ullam corporis
+                        suscipit sint facilis laboriosam ipsa voluptate aspernatur veniam quos nobis quisquam sunt debitis
+                        deserunt voluptas neque a incidunt? Distinctio, consequuntur laboriosam repellendus deleniti
+                        corrupti suscipit perferendis illum sequi voluptas facilis id eaque quisquam laudantium quasi.
+                        Veniam repellendus ipsam rerum, autem enim, doloremque, fugit repudiandae aut quis laudantium
+                        incidunt nemo nostrum dolorem illum! In, architecto? Ipsam illum nihil, reiciendis odit ex optio
+                        nam, fugiat iste, at placeat voluptates. Odio consequatur explicabo, adipisci nobis tempore
+                        similique earum. Non, blanditiis aliquid magnam ipsum minus a eius quae libero at deserunt.
+                    </p>
+
+                    <p class="modal-content-description mb-3">
+
+                    </p>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-warning">Save changes</button>
+                    <a class="btn-go-site" target="blank" href="">
+                        <button type="button" class="btn btn-danger btn-go-site">More info</button>
+                    </a>
                 </div>
             </div>
         </div>

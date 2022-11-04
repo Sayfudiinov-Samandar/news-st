@@ -1,1 +1,56 @@
+.site-footer{
+    padding: 30px 0;
+}
 
+.footer-box{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-box__left{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-box__right{
+    margin-top: auto;
+}
+
+.footer-box__logo-box{
+    display: inline;
+    margin-bottom: 50px;
+}
+
+.footer-logo-link{
+    display: inline;
+    padding: 20px 10px;
+    background-color: #ffc107;
+    border-radius: 8px;
+}
+
+.footer-logo{
+    display: inline;
+}
+
+.footer-box__tel{
+    color: #ffc107;
+    text-decoration: none;
+    font-family: "Assistant";
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.footer-box__list{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-box__list-item{
+    padding: 8px 5px;
+    background-color: #ffc107;
+    border-radius: 8px;
+}

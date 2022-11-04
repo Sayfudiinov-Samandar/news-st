@@ -3,7 +3,7 @@
 const elResultBox = document.querySelector(".result-box")
 const elTemplate = document.querySelector(".template").content
 let fragment = new DocumentFragment()
-const APIKEY = "1f08b0a9213045bea7a54e24bc34c982"
+const APIKEY = "95800542e6fd46deb1f6c36a9a85e265"
 
 
 

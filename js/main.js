@@ -35,21 +35,21 @@ let inputValue
 let data 
 
 //make li box news 
-// function makeList(array) {
-//     elResultBox.innerHTML = ""
-//     array.forEach((elm) => {
-//         let cloneTemplate = elTemplate.cloneNode(true)
-//         cloneTemplate.querySelector(".item-title").textContent = elm.title
-//         cloneTemplate.querySelector(".sourse-name").textContent = elm.source.name
-//         cloneTemplate.querySelector(".news-img").src = elm.urlToImage
-//         cloneTemplate.querySelector(".btn-info").dataset.idForModal=elm.source.name
-//         cloneTemplate.querySelector(".news-time").textContent=`Data ${elm.publishedAt.slice(8,10)} ${elm.publishedAt.slice(5, 7)}-${elm.publishedAt.slice(0,4)} ${elm.publishedAt.slice(11,16)} `
+function makeList(array) {
+    elResultBox.innerHTML = ""
+    array.forEach((elm) => {
+        let cloneTemplate = elTemplate.cloneNode(true)
+        cloneTemplate.querySelector(".item-title").textContent = elm.title
+        cloneTemplate.querySelector(".sourse-name").textContent = elm.source.name
+        cloneTemplate.querySelector(".news-img").src = elm.urlToImage
+        cloneTemplate.querySelector(".btn-info").dataset.idForModal=elm.source.name
+        cloneTemplate.querySelector(".news-time").textContent=`Data ${elm.publishedAt.slice(8,10)} ${elm.publishedAt.slice(5, 7)}-${elm.publishedAt.slice(0,4)} ${elm.publishedAt.slice(11,16)} `
 
 
-//         fragment.appendChild(cloneTemplate)
-//     });
-//     elResultBox.appendChild(fragment)
-// }
+        fragment.appendChild(cloneTemplate)
+    });
+    elResultBox.appendChild(fragment)
+}
 
 
 // pegination style
